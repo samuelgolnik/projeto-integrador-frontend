@@ -1,0 +1,71 @@
+.sensor-readings-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sensor-readings {
+  border-radius: 8px;
+}
+
+.sensor-readings h2 {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.readings-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.reading-card {
+  display: flex;
+  align-items: center;
+  background-color:rgb(68, 68, 68);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.reading-card:hover {
+  transform: translateY(-5px);
+}
+
+.reading-card h3 {
+  margin: 0;
+  font-size: 16px;
+  color: white;
+}
+
+.reading-card p {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+/* Cores dos ícones */
+.temperature .icon { color: #ff5722; }
+.humidity .icon { color: #03a9f4; }
+.noise .icon { color: #ff9800; }
+.pm .icon { color: #9c27b0; }
+.voltage .icon { color: #4caf50; }
+.time .icon { color: #607d8b; }
+.rain .icon { color: #4b79a1; }
+.wind-speed .icon, .wind-direction .icon { color: #3c91e6; }
+.luminosity .icon, .solar-radiation .icon, .uv .icon { color: #ffeb3b; }
+.pressure .icon { color: #8bc34a; }
+
+
+.title {
+  text-align: center;
+  font-size: 32px;
+}
